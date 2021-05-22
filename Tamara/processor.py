@@ -4,6 +4,7 @@ from string import ascii_letters, digits
 
 import playsound
 import random
+import speech_recognition as sr
 
 
 class TamaraProcessor(object):
@@ -31,5 +32,19 @@ class TamaraProcessor(object):
         playsound.playsound(filename)
 
     # TODO: Fix PyAudio problem
-if __name__ == '__main__':
-    TamaraProcessor().speak('Hello')
+    # TODO: Sound processing does not work.
+    # Try on different machine.
+    @staticmethod
+    def listen():
+        r = sr.Recognizer()
+        with sr.Microphone() as source:
+            audio = r.listen(source)
+            said = ""
+            try:
+                said = r.recognize_google(audio)
+                print(said)
+            except Exception as e:
+                # print(e)
+                pass
+
+        return said
