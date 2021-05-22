@@ -2,7 +2,7 @@
 
 ---
 
-Tamara is a voice assisstant that will help you with most of your common daily activites. Later versions of Tamara will include machine learning, neural network and deep learning. 
+Tamara is a voice assistant that will help you with most of your common daily activities. Later versions of Tamara will include machine learning, neural network and deep learning.
 
 ## Installation
 
@@ -19,11 +19,11 @@ pip install -r requirements.txt
 ```
 git clone https://github.com/xioton-spec/tamara.git
 cd tamara
-pip install -r requirements.txt 
+pip install -r requirements.txt
 ```
 
 ---
-If you encounter problems with the installation of PyAudio, then navigate to [this guide](https://tamara.github.io/pyaudio) for assisstance.
+If you encounter problems with the installation of PyAudio, then navigate to [this guide](https://tamara.github.io/pyaudio) for assistance.
 
 
 # Tamara.0.1.0
