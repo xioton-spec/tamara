@@ -1,0 +1,3 @@
+playsound
+gtts
+speech_recognition
